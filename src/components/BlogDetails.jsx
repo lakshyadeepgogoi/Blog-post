@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 function BlogDetails({post}) {
   return (
-    <div>
+    <div className='mt-[50px]'>
          <NavLink to={`/blog/${post.id}`}>
             <span>{post.title}</span>
          </NavLink>
