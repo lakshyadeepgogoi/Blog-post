@@ -34,7 +34,8 @@ export default function App() {
   }, [location.pathname, location.search]);
 
   return (
-    <Routes>
+    <div className="w-full h-full flex flex-col gap-y-1 justify-center items-center ">
+      <Routes >
       <Route path="/" element={<Home />} />
       <Route path="/blog/:blogId" element={<BlogPage/>} />
       <Route path="/tags/:tag" element={<TagPage/>} />
@@ -43,6 +44,9 @@ export default function App() {
      
 
     </Routes>
+
+    </div>
+
 
   );
 }

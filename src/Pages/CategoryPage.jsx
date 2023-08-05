@@ -10,17 +10,18 @@ function CategoryPage() {
     const location = useLocation();
     const category = location.pathname.split("/").at(-1);
   return (
-    <div>
+    <div className=' w-11/12 max-w-[670px]   py-8 flex flex-col gap-y-7 mt-[66px] mb-[70px]  justify-center  items-center  '>
         <Header/>
-        <div>
+        <div className='mb-6 justify-start flex items-center space-x-2'>
            <button
+           className='border-2 border-gray-300 py-1 px-4 rounded-md'
            onClick={() => navigator(-1) }
            >
                 Back
             
             </button> 
-            <h2>
-                Blogs on <span>{category}</span>
+            <h2 className='text-xl font-bold'>
+                Blogs on <span className='underline'>{category}</span>
             </h2>
         </div>
         <Blogs/>
