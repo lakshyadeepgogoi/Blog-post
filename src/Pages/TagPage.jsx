@@ -14,7 +14,7 @@ function TagPage() {
         <Header/>
         <div>
             <button
-            className='border-2 border-gray-300 py-1 px-4 rounded-md'
+            className='border-2 border-gray-300  bg-white  py-1 px-4 rounded-md'
             onClick={() => navigation(-1)}
             >
                 Back

@@ -14,7 +14,7 @@ function CategoryPage() {
         <Header/>
         <div className='mb-6 justify-start flex items-center space-x-2'>
            <button
-           className='border-2 border-gray-300 py-1 px-4 rounded-md'
+           className='border-2 border-gray-300  bg-white py-1 px-4 rounded-md'
            onClick={() => navigator(-1) }
            >
                 Back

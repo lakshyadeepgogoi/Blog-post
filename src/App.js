@@ -34,7 +34,7 @@ export default function App() {
   }, [location.pathname, location.search]);
 
   return (
-    <div className="w-full h-full flex flex-col gap-y-1 justify-center items-center ">
+    <div className="w-full h-full flex flex-col gap-y-1 justify-center items-center bg-lime-200">
       <Routes >
       <Route path="/" element={<Home />} />
       <Route path="/blog/:blogId" element={<BlogPage/>} />
